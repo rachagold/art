@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel Goldberg - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">RACHEL GOLDBERG</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">FINE ART</h1>
+            <p class="hero-subtitle">ARTIST • DESIGNER • EDUCATOR</p>
+            <div class="geometric-shape circle-shape"></div>
+        </div>
+    </section>
+
+    <!-- Series Overview -->
+    <main class="gallery-main" id="seriesOverview">
+        <div class="series-grid">
+            <!-- Cambodia Series -->
+            <div class="series-card" data-series="cambodia">
+                <div class="series-thumbnail-grid">
+                    <div class="series-thumbnail"><img src="artworks/cambodia/phnum_aoral.png" alt="Phnum Aoral"></div>
+                    <div class="series-thumbnail"><img src="artworks/cambodia/russian_market.png" alt="Russian Market"></div>
+                    <div class="series-thumbnail"><img src="artworks/cambodia/daun_penh.png" alt="Daun Penh"></div>
+                </div>
+                <h2 class="series-title">Cambodia</h2>
+                <p class="series-year">2025</p>
+            </div>
+
+            <!-- Korea Series -->
+            <div class="series-card" data-series="korea">
+                <div class="series-thumbnail-grid">
+                    <div class="series-thumbnail"><img src="artworks/korea/jeju_ii.png" alt="Jeju ii"></div>
+                    <div class="series-thumbnail"><img src="artworks/korea/jejui.png" alt="Jeju i"></div>
+                    <div class="series-thumbnail"><img src="artworks/korea/namhansanseong.png" alt="Namhansanseong"></div>
+                </div>
+                <h2 class="series-title">Korea</h2>
+                <p class="series-year">2023-2025</p>
+            </div>
+
+            <!-- Miscellaneous Countries Series -->
+            <div class="series-card" data-series="miscellaneous">
+                <div class="series-thumbnail-grid">
+                    <div class="series-thumbnail"><img src="artworks/miscellaneous/golden_ganesha.png" alt="Golden Ganesha"></div>
+                    <div class="series-thumbnail"><img src="artworks/miscellaneous/bangkok.png" alt="Bangkok"></div>
+                    <div class="series-thumbnail"><img src="artworks/miscellaneous/rocky_mountain.png" alt="Rocky Mountain"></div>
+                </div>
+                <h2 class="series-title">Miscellaneous Countries</h2>
+                <p class="series-year">2023-2025</p>
+            </div>
+
+            <!-- Commissions Series -->
+            <div class="series-card" data-series="commissions">
+                <div class="series-thumbnail-grid">
+                    <div class="series-thumbnail"><img src="artworks/commissions/banchan.png" alt="Banchan"></div>
+                    <div class="series-thumbnail"><img src="artworks/commissions/odaesan.png" alt="Odaesan"></div>
+                    <div class="series-thumbnail"><img src="artworks/commissions/banchan.png" alt="Commission"></div>
+                </div>
+                <h2 class="series-title">Commissions</h2>
+                <p class="series-year">2024</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Gallery Detail View (Hidden by default) -->
+    <main class="gallery-main gallery-detail" id="galleryDetail" style="display: none;">
+        <!-- Cambodia Section -->
+        <section class="gallery-section" id="cambodia">
+            <div class="section-header">
+                <h2 class="section-title">Cambodia</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="artwork-grid">
+                <!-- Phnum Aoral -->
+                <div class="artwork-item" data-artwork="1">
+                    <div class="artwork-image-container">
+                        <img src="artworks/cambodia/phnum_aoral.png" alt="Phnum Aoral" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Phnum Aoral</h3>
+                        <p class="artwork-year">2025</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">91 × 122 cm</p>
+                    </div>
+                    <div class="sub-painting">
+                        <img src="artworks/cambodia/phnum_aoral_ep.png" alt="Phnum Aoral EP" class="sub-image">
+                    </div>
+                </div>
+
+                <!-- Russian Market -->
+                <div class="artwork-item" data-artwork="2">
+                    <div class="artwork-image-container">
+                        <img src="artworks/cambodia/russian_market.png" alt="Russian Market" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Russian Market</h3>
+                        <p class="artwork-year">2025</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">40 × 40 cm</p>
+                    </div>
+                    <div class="sub-painting">
+                        <img src="artworks/cambodia/russian_market_ep.png" alt="Russian Market EP" class="sub-image">
+                    </div>
+                </div>
+
+                <!-- Daun Penh -->
+                <div class="artwork-item" data-artwork="3">
+                    <div class="artwork-image-container">
+                        <img src="artworks/cambodia/daun_penh.png" alt="Daun Penh" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Daun Penh</h3>
+                        <p class="artwork-year">2025</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">50 × 60 cm</p>
+                    </div>
+                    <div class="sub-painting">
+                        <img src="artworks/cambodia/daun_penh_ep.png" alt="Daun Penh EP" class="sub-image">
+                    </div>
+                </div>
+
+                <!-- Independence -->
+                <div class="artwork-item" data-artwork="4">
+                    <div class="artwork-image-container">
+                        <img src="artworks/cambodia/independence.png" alt="Independence" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Independence</h3>
+                        <p class="artwork-year">2025</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">60 × 50 cm</p>
+                    </div>
+                    <div class="sub-painting">
+                        <img src="artworks/cambodia/independence_ep.png" alt="Independence EP" class="sub-image">
+                    </div>
+                </div>
+
+                <!-- Koh Rong (with 2 EPs - triptych) -->
+                <div class="artwork-item triptych-main" data-artwork="5">
+                    <div class="artwork-image-container">
+                        <img src="artworks/cambodia/koh_rong.png" alt="Koh Rong" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Koh Rong</h3>
+                        <p class="artwork-year">2025</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">50 × 60 cm</p>
+                    </div>
+                    <div class="triptych-sub">
+                        <div class="sub-painting">
+                            <img src="artworks/cambodia/koh_rong_ep_i.png" alt="Koh Rong EP i" class="sub-image">
+                        </div>
+                        <div class="sub-painting">
+                            <img src="artworks/cambodia/koh_rong_ep_ii.png" alt="Koh Rong EP ii" class="sub-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Korea Section -->
+        <section class="gallery-section" id="korea" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title">Korea</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="artwork-grid">
+                <!-- Jeju ii -->
+                <div class="artwork-item" data-artwork="1">
+                    <div class="artwork-image-container">
+                        <img src="artworks/korea/jeju_ii.png" alt="Jeju ii" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Jeju ii</h3>
+                        <p class="artwork-year">2025</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">45.5 × 53 cm</p>
+                    </div>
+                </div>
+
+                <!-- Jeju i (triptych with 2 EPs) -->
+                <div class="artwork-item triptych-main" data-artwork="2">
+                    <div class="artwork-image-container">
+                        <img src="artworks/korea/jejui.png" alt="Jeju i" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Jeju i</h3>
+                        <p class="artwork-year">2024</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">72.5 × 90.5 cm</p>
+                    </div>
+                    <div class="triptych-sub">
+                        <div class="sub-painting">
+                            <img src="artworks/korea/jejui_ep_i.png" alt="Jeju i EP i" class="sub-image">
+                        </div>
+                        <div class="sub-painting">
+                            <img src="artworks/korea/jejui_ep_ii.png" alt="Jeju i EP ii" class="sub-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Namhansanseong -->
+                <div class="artwork-item" data-artwork="3">
+                    <div class="artwork-image-container">
+                        <img src="artworks/korea/namhansanseong.png" alt="Namhansanseong" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Namhansanseong</h3>
+                        <p class="artwork-year">2024</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">45.5 × 53 cm</p>
+                    </div>
+                </div>
+
+                <!-- Dobongsan -->
+                <div class="artwork-item" data-artwork="4">
+                    <div class="artwork-image-container">
+                        <img src="artworks/korea/dobongsan.png" alt="Dobongsan" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Dobongsan</h3>
+                        <p class="artwork-year">2023</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">72.5 × 60.5 cm</p>
+                    </div>
+                </div>
+
+                <!-- Nami Island -->
+                <div class="artwork-item" data-artwork="5">
+                    <div class="artwork-image-container">
+                        <img src="artworks/korea/nami_island.png" alt="Nami Island" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Nami Island</h3>
+                        <p class="artwork-year">2023</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">45.5 × 53 cm</p>
+                    </div>
+                </div>
+
+                <!-- Nowon-Gu -->
+                <div class="artwork-item" data-artwork="6">
+                    <div class="artwork-image-container">
+                        <img src="artworks/korea/nowon-gu.png" alt="Nowon-Gu" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Nowon-Gu</h3>
+                        <p class="artwork-year">2023</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">45.5 × 53 cm</p>
+                    </div>
+                </div>
+
+                <!-- Myeongdong -->
+                <div class="artwork-item" data-artwork="7">
+                    <div class="artwork-image-container">
+                        <img src="artworks/korea/myeongdong.png" alt="Myeongdong" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Myeongdong</h3>
+                        <p class="artwork-year">2023</p>
+                        <p class="artwork-medium">Acrylic and Pencil on Paper</p>
+                        <p class="artwork-size">20 × 20 cm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Miscellaneous Countries Section -->
+        <section class="gallery-section" id="miscellaneous" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title">Miscellaneous Countries</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="artwork-grid">
+                <!-- Golden Ganesha -->
+                <div class="artwork-item" data-artwork="1">
+                    <div class="artwork-image-container">
+                        <img src="artworks/miscellaneous/golden_ganesha.png" alt="Golden Ganesha" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Golden Ganesha</h3>
+                        <p class="artwork-year">2025</p>
+                        <p class="artwork-medium">Acrylic and Ink on Canvas</p>
+                        <p class="artwork-size">90 × 60 cm</p>
+                    </div>
+                </div>
+
+                <!-- Bangkok -->
+                <div class="artwork-item" data-artwork="2">
+                    <div class="artwork-image-container">
+                        <img src="artworks/miscellaneous/bangkok.png" alt="Bangkok" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Bangkok</h3>
+                        <p class="artwork-year">2023</p>
+                        <p class="artwork-medium">Acrylic and Ink on Paper</p>
+                        <p class="artwork-size">52 × 38 cm</p>
+                    </div>
+                </div>
+
+                <!-- Rocky Mountain -->
+                <div class="artwork-item" data-artwork="3">
+                    <div class="artwork-image-container">
+                        <img src="artworks/miscellaneous/rocky_mountain.png" alt="Rocky Mountain" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Rocky Mountain</h3>
+                        <p class="artwork-year">2023</p>
+                        <p class="artwork-medium">Acrylic on Canvas Panel</p>
+                        <p class="artwork-size">24 × 33 cm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commissions Section -->
+        <section class="gallery-section" id="commissions" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title">Commissions</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="artwork-grid">
+                <!-- Banchan -->
+                <div class="artwork-item" data-artwork="1">
+                    <div class="artwork-image-container">
+                        <img src="artworks/commissions/banchan.png" alt="Banchan" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Banchan</h3>
+                        <p class="artwork-year">2024</p>
+                        <p class="artwork-medium">Acrylic on Canvas</p>
+                        <p class="artwork-size">70 × 80 cm</p>
+                    </div>
+                </div>
+
+                <!-- Odaesan -->
+                <div class="artwork-item" data-artwork="2">
+                    <div class="artwork-image-container">
+                        <img src="artworks/commissions/odaesan.png" alt="Odaesan" class="artwork-image">
+                        <div class="zoom-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3 class="artwork-title">Odaesan</h3>
+                        <p class="artwork-year">2024</p>
+                        <p class="artwork-medium">Acrylic on Canvas Panel</p>
+                        <p class="artwork-size">45.5 × 53 cm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="back-to-series">
+            <button class="back-btn" id="backToSeries">← Back to Series</button>
+        </div>
+    </main>
+
+    <!-- Zoom Modal -->
+    <div class="zoom-modal" id="zoomModal">
+        <span class="close-zoom">&times;</span>
+        <img class="zoom-modal-content" id="zoomImage">
+        <div class="zoom-info">
+            <h3 id="zoomTitle"></h3>
+            <p id="zoomDetails"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="footer-name">RACHEL GOLDBERG</p>
+            <p class="footer-roles">ARTIST • DESIGNER • EDUCATOR</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
